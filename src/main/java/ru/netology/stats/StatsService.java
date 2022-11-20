@@ -70,6 +70,7 @@ public class StatsService {
 
         return counter;
     }
+
     public int minSales(long[] sales) {
         int minMonth = 0;
         long minSales = sales[0];

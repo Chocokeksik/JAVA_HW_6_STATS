@@ -9,14 +9,14 @@ class StatsServiceTest {
 
     @Test
 
-    public void testSum(){
+    public void testSum() {
 
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.sum(sales);
-        long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7+ 14 + 14 + 18;
+        long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
 
         assertEquals(expected, actual);
 
@@ -24,25 +24,25 @@ class StatsServiceTest {
 
     @Test
 
-    public void testAverage(){
+    public void testAverage() {
 
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.average(sales);
-        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7+ 14 + 14 + 18) / 12;
+        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void testmaxSales(){
+    public void testmaxSales() {
 
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.maxSales(sales);
         long expected = 7;
@@ -52,11 +52,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testlowAverage(){
+    public void testlowAverage() {
 
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.lowAverage(sales);
         long expected = 5;
@@ -66,11 +66,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testhighAverage(){
+    public void testhighAverage() {
 
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.highAverage(sales);
         long expected = 5;
@@ -80,11 +80,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testminSales(){
+    public void testminSales() {
 
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.minSales(sales);
         long expected = 8;
